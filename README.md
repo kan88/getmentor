@@ -1,4 +1,4 @@
-Запуск проекта: npm run serve
+Запуск проекта: npm run serve <br>
 Сборка проекта: npm run build
 
 Ссылка на проект: <br>
