@@ -7,162 +7,97 @@
 </head>
 
 <body>
-    <header>
-        <a href="" class="header-logo">Интерьер</a>
-        <nav>
-            <ul class="header-list">
-                <li class="header-item">
-                    <a href="" class="header-link">Каталог</a>
-                </li>
-                <li class="header-item">
-                    <a href="" class="header-link">Корзина</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header">
+        <h1 class="header__target" style="visibility: hidden">Магазин мебели</h1>
+        <div class="container">
+            <a class="header__logo" href="">Интерьер</a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="">Каталог</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <div class="filter">
-            <select name="filter-items">
-                <option value="1" class="filter-item">Порядок: сперва новые</option>
-                <option value="1" class="filter-item">Порядок: сперва дешевые</option>
-                <option value="1" class="filter-item">Порядок: сперва дорогие</option>
+    <main class="main">
+        <section class="sort">
+            <select class="sort__select" name="sort">
+                <option class="sort__select-item" value="1">Порядок: сперва новые</option>
+                <option class="sort__select-item" value="2">Порядок: сперва дешевые</option>
+                <option class="sort__select-item" value="3">Порядок: сперва дорогие</option>
             </select>
-        </div>
-        <div class="catalog">
-            <div class="catalog-items">
-                <div class="catalog-item">
-                    <img src="./src/img/bedTatran.jpg" alt="#">
-                    <a href="#" class="buy-link"><img src="/src/img/buy.png" alt="" class="buy-svg"></a>
-                    <a href="#" class="favorites-link"><img src="/src/img/favorite.png" alt="" class="favorite-svg"></a>
-                    <h2>Кровать TATRAN</h2>
-                    <div class="description">
-                        <p>Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
-                    </div>
-                    <div class="price">120 000 руб.</div>
-                </div>
-
-                <div class="catalog-item">
-                    <img src="/src/img/armchairVilora.jpg" alt="#">
-                    <a href="#" class="buy-link"><img src="/src/img/buy.png" alt="" class="buy-svg"></a>
-                    <a href="#" class="favorites-link"><img src="/src/img/favorite.png" alt="" class="favorite-svg"></a>
-                    <h2>Кресло VILORA</h2>
-                    <div class="description">
-                        <p>Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.
+        </section>
+        <section class="catalog">
+            <h2 class="header__target" style="visibility: hidden">Каталог мебели</h2>
+            <div class="container">
+                <ul class="catalog__items">
+                    <li class="catalog__item">
+                        <img class="catalog__item-img" src="/src/img/products/bedTatran.jpg" height="250" width="379"
+                            alt="Изображение 'Кровать Татран'.">
+                        <button class="catalog__btn catalog__btn--buy" href="#"></button>
+                        <button class="catalog__btn catalog__btn--favorites" href="#"></button>
+                        <h3 class="catalog__item-title">Кровать TATRAN</h3>
+                        <p class="catalog__item-descr">Основание из полированной нержавеющей стали, придает оригинальный
+                            парящий эффект.</p>
+                        <span class="catalog__item-price">120 000 руб.</span>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-img" src="/src/img/products/armchairVilora.jpg" height="250"
+                            width="379" alt="Изображение 'Кресло VILORA'.">
+                        <button class="catalog__btn catalog__btn--buy" href="#"></button>
+                        <button class="catalog__btn catalog__btn--favorites" href="#"></button>
+                        <h3 class="catalog__item-title">Кресло VILORA</h3>
+                        <p class="catalog__item-descr">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и
+                            приятная на ощупь ткань. </p>
+                        <span class="catalog__item-price">21 000 руб.</span>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-img" src="/src/img/products/tableMenu.jpg" height="250" width="379"
+                            alt="Изображение 'Стол MENU'.">
+                        <button class="catalog__btn catalog__btn--buy" href="#"></button>
+                        <button class="catalog__btn catalog__btn--favorites" href="#"></button>
+                        <h3 class="catalog__item-title">Стол MENU</h3>
+                        <p class="catalog__item-descr">Европейский дуб - отличается особой прочностью и стабильностью.
                         </p>
-                    </div>
-                    <div class="price">21 000 руб.</div>
-                </div>
-
-                <div class="catalog-item">
-                    <img src="/src/img/tableMenu.jpg" alt="#">
-                    <a href="#" class="buy-link"><img src="/src/img/buy.png" alt="" class="buy-svg"></a>
-                    <a href="#" class="favorites-link"><img src="/src/img/favorite.png" alt="" class="favorite-svg"></a>
-                    <h2>Стол MENU</h2>
-                    <div class="description">
-                        <p>Европейский дуб - отличается особой прочностью и стабильностью.</p>
-                    </div>
-                    <div class="price">34 000 руб.</div>
-                </div>
-
-                <div class="catalog-item">
-                    <img src="/src/img/sofaAskesta.jpg" alt="#">
-                    <a href="#" class="buy-link"><img src="/src/img/buy.png" alt="" class="buy-svg"></a>
-                    <a href="#" class="favorites-link"><img src="/src/img/favorite.png" alt="" class="favorite-svg"></a>
-                    <h2>Диван ASKESTA</h2>
-                    <div class="description">
-                        <p>Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать</p>
-                    </div>
-                    <div class="price">68 000 руб.</div>
-                </div>
-
-                <div class="catalog-item">
-                    <img src="/src/img/armchairLunara.jpg" alt="#">
-                    <a href="#" class="buy-link"><img src="/src/img/buy.png" alt="" class="buy-svg"></a>
-                    <a href="#" class="favorites-link"><img src="/src/img/favorite.png" alt="" class="favorite-svg"></a>
-                    <h2>Кресло LUNAR</h2>
-                    <div class="description">
-                        <p>Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
-                    </div>
-                    <div class="price">40 000 руб.</div>
-                </div>
-
-                <div class="catalog-item">
-                    <img src="/src/img/closetNastan.jpg" alt="#">
-                    <a href="#" class="buy-link"><img src="/src/img/buy.png" alt="" class="buy-svg"></a>
-                    <a href="#" class="favorites-link"><img src="/src/img/favorite.png" alt="" class="favorite-svg"></a>
-                    <h2>Шкаф Nastan</h2>
-                    <div class="description">
-                        <p>Мебель может быть оснащена разнообразными системами подсветки.</p>
-                    </div>
-                    <div class="price">80 000 руб.</div>
-                </div>
+                        <span class="catalog__item-price">34 000 руб.</span>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-img" src="/src/img/products/sofaAskesta.jpg" height="250" width="379"
+                            alt="Изображение 'Диван ASKESTA'.">
+                        <button class="catalog__btn catalog__btn--buy" href="#"></button>
+                        <button class="catalog__btn catalog__btn--favorites" href="#"></button>
+                        <h3 class="catalog__item-title">Диван ASKESTA</h3>
+                        <p class="catalog__item-descr">Благодаря защелкивающемуся механизму диван легко раскладывается в
+                            комфортную кровать</p>
+                        <span class="catalog__item-price">68 000 руб.</span>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-img" src="/src/img/products/armchairLunara.jpg" height="250"
+                            width="379" alt="Изображение 'Кресло LUNAR'.">
+                        <button class="catalog__btn catalog__btn--buy" href="#"></button>
+                        <button class="catalog__btn catalog__btn--favorites" href="#"></button>
+                        <h3 class="catalog__item-title">Кресло LUNAR</h3>
+                        <p class="catalog__item-descr">Прекрасно переносит солнечные лучи, перепады влажности и любые
+                            осадки</p>
+                        <span class="catalog__item-price">40 000 руб.</span>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-img" src="/src/img/products/closetNastan.jpg" height="250" width="379"
+                            alt="Изображение 'Шкаф Nastan'.">
+                        <button class="catalog__btn catalog__btn--buy" href="#"></button>
+                        <button class="catalog__btn catalog__btn--favorites" href="#"></button>
+                        <h3 class="catalog__item-title">Шкаф Nastan</h3>
+                        <p class="catalog__item-descr">Мебель может быть оснащена разнообразными системами подсветки.
+                        </p>
+                        <span class="catalog__item-price">80 000 руб.</span>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="cart">
-            <div class="cart-wrapper">
-                <div class="byu-list">
-                    <div class="product">
-                        <div class="bought-product">
-                            <p>Товар</p>
-                        </div>
-                        <div class="total-product">
-                            <p>К-во</p>
-                        </div>
-                    </div>
-                    <div class="buy-list-item">
-                        <div class="catalog-item">
-                            <div class="photo">
-                                <img src="/src/img/bedTatran.jpg" alt="" class="photo-item">
-                            </div>
-                            <div class="description">
-                                <h2 class="description-title">Кровать TATRAN</h2>
-                                <div class="description-text">
-                                    <p>Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
-                                    </p>
-                                </div>
-                                <div class="description-price">120 000 руб.</div>
-                                <a href="" class="favorites-link">Избранное</a>
-                                <a href="" class="delete-link">Удалить</a>
-                            </div>
-                            <div class="total">
-                                <input type="number" class="total-order">
-                            </div>
-                        </div>
-                        <div class="catalog-item">
-                            <div class="photo">
-                                <img src="/src/img/closetNastan.jpg" alt="" class="photo-item">
-                            </div>
-                            <div class="description">
-                                <h2 class="description-title">Диван Nastan</h2>
-                                <div class="description-text">
-                                    <p>Модель отличается простотой линий и форм, отсутствием броского декора.</p>
-                                </div>
-                                <div class="description-price">80 000 руб.</div>
-                                <a href="" class="favorites-link">Избранное</a>
-                                <a href="" class="delete-link">Удалить</a>
-                            </div>
-                            <div class="total">
-                                <input type="number" class="total-order">
-                            </div>
-                        </div>
-                        <button class="clear-cart">Очистить корзину</button>
-                        <button class="continue-buy">Продолжить покупки</button>
-                    </div>
-                </div>
-            </div>
-            <div class="order">
-                <h2 class="order-title">Оформление заказа</h2>
-                <form action="">
-                    <input type="name" placeholder="Имя Фамилия">
-                    <input type="tel" placeholder="+ 7 904 000 80 80">
-                    <input type="name" placeholder="Адрес доставки">
-                    <div class="sum">
-                        <p>Итого: 128 000 руб.</p>
-                    </div>
-                    <input type="submit" value="Оформить заказ">
-                </form>
-            </div>
-        </div>
+        </section>
     </main>
 </body>
 
