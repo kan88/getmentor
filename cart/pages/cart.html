@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>Cart</title>
+</head>
+
+<body>
+   <header class="header">
+      <h1 class="header__title visually-hidden">Магазин мебели</h1>
+      <div class="header__container">
+         <a class="header__logo" href="">Интерьер</a>
+         <nav class="header__nav">
+            <ul class="header__list">
+               <li class="header__item">
+                  <a class="header__link" href="">Каталог</a>
+               </li>
+               <li class="header__item">
+                  <a class="header__link" href="">Корзина</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <main class="main">
+      <div class="main__container">
+         <section class="cart-list">
+            <div class="cart_list__container">
+               <div class="cart-list__buy-info">
+                  <p class="cart-list__quantity-product">Товар</p>
+                  <p class="cart-list__quantity-product">К-во</p>
+               </div>
+               <ul class="cart-list__items">
+                  <li class="cart-list__item">
+                     <img class="cart-list__image" src="/src/img/products/tableMenu.jpg" width="173" height="173"
+                        alt="Изображение: Стол MENU.">
+                     <h3 class="cart-list__headline">Стол MENU</h3>
+                     <p class="cart-list__description">Для того чтобы трапезничать было приятно, необходим правильный
+                        обеденный стол.</p>
+                     <span class="cart-list__price">34 000 руб.</span>
+                     <div class="cart-list__buttons">
+                        <button class="cart-list__button cart-list__button--favotites">Избранные</button>
+                        <button class="cart-list__button cart-list__button--delete">Удалить</button>
+                     </div>
+                     <input class="cart-list__quantity" type="number" min="1" value="1">
+                  </li>
+                  <li class="cart-list__item">
+                     <img class="cart-list__image" src="/src/img/products/closetNastan.jpg" width="173" height="173"
+                        alt="Изображение: Диван NASTAN.">
+                     <h3 class="cart-list__headline">Диван NASTAN</h3>
+                     <p class="cart-list__description">Модель отличается простотой линий и форм, отсутствием броского
+                        декора.</p>
+                     <span class="cart-list__price">80 000 руб.</span>
+                     <div class="cart-list__buttons">
+                        <button class="cart-list__button cart-list__button--favotites">Избранные</button>
+                        <button class="cart-list__button cart-list__button--delete">Удалить</button>
+                     </div>
+                     <input class="cart-list__quantity" type="number" min="1" value="1">
+                  </li>
+               </ul>
+               <div class="cart-list__buttons-cart">
+                  <button class="cart-list__button-cart cart-list__button-cart--clear">Очистить корзину</button>
+                  <button class="cart-list__button-cart cart-list__button-cart--resuming">Продолжить покупки</button>
+               </div>
+            </div>
+         </section>
+         <section class="checkout">
+            <div class="checkout__container">
+               <h2 class="checkout__title">Оформление заказа</h2>
+               <div class="checkout__input">
+                  <input class="checkout__name" type="text" placeholder="Имя Фамилия">
+                  <input class="checkout__phone" type="tel" placeholder="+ 7 904 000 80 80">
+                  <input class="checkout__address" type="text" placeholder="Адрес доставки">
+               </div>
+               <p class="checkout__total">Итого: <span class="checkout__price">128 000 руб.</span></p>
+               <button class="checkout__buy-button">Оформить заказ</button>
+            </div>
+         </section>
+      </div>
+   </main>
+</body>
+
+</html>
