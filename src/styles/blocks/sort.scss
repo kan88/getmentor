@@ -1,0 +1,20 @@
+.sort {
+   height: 106px;
+   position: relative;
+}
+
+.sort__select {
+   position: absolute;
+   right: 0%;
+   bottom: 35%;
+   width: 288px;
+   height: 38px;
+   border: 1px solid #C4C4C4;
+   border-radius: 20px;
+   font-family: Montserrat-medium, sans-serif;
+   padding: 10px 0px 10px 14px;
+   color: $black;
+   appearance: none;
+   background: url('/src/assets/img/icons/Polygon\ 1.svg') no-repeat right;
+   background-position-x: 250px;
+}

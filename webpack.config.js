@@ -22,8 +22,20 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: 'index.html',
             template: 'index.html',
         }),
+        new HtmlWebpackPlugin({
+            filename: 'cart.html',
+            template: 'cart.html',
+        }),
+        new CopyPlugin({
+            patterns: [
+              { from: "src/images", to: "images" },
+              { from: "src/fonts", to: "fonts" },
+              
+            ],
+          }),
 
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/
@@ -43,6 +55,7 @@ const config = {
                 type: 'asset',
             },
 
+
             // Add your rules for custom modules here
             // Learn more about loaders from https://webpack.js.org/loaders/
         ],
@@ -52,10 +65,10 @@ const config = {
 module.exports = () => {
     if (isProduction) {
         config.mode = 'production';
-        
+
         config.plugins.push(new MiniCssExtractPlugin());
-        
-        
+
+
     } else {
         config.mode = 'development';
     }
