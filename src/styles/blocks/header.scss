@@ -1,5 +1,3 @@
-$black: #000000;
-$grey: #888888;
 $light-grey: #CCCCCC;
 $white: #FFFFFF;
 
@@ -13,21 +11,19 @@ $white: #FFFFFF;
 }
   
 .header__container {
-   background-color: $light-grey;
+   width: 1200px;
    height: 76px;
-   max-width: 1200px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    margin: 0 auto;
+   background-color: $light-grey;
 }
 
 .header__logo {
    text-decoration: none;
-   font-style: normal;
    font-weight: 600;
-   font-size: 36px;
-   line-height: 44px;
+   font-size: 37px;
    color: $white;
 }
 .header__list {
@@ -36,17 +32,14 @@ $white: #FFFFFF;
 
 .header__item {
    list-style-type: none;
-   margin-right: 32px;
 }
-.header__item:last-child{
-   margin: 0px;
+.header__item:first-child{
+   margin-right: 32px;
 };
 
 .header__link {
    text-decoration: none;
-   font-style: normal;
    font-weight: 400;
    font-size: 16px;
-   line-height: 20px;
    color: $white;
 }

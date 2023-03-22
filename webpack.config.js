@@ -3,7 +3,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const CopyPlugin = require("copy-webpack-plugin");
 const isProduction = process.env.NODE_ENV == 'production';
 
 
@@ -31,11 +31,11 @@ const config = {
         }),
         new CopyPlugin({
             patterns: [
-              { from: "src/images", to: "images" },
-              { from: "src/fonts", to: "fonts" },
-              
+                { from: "src/images/products", to: "images/products" },
+                { from: "src/assets/fonts", to: "fonts" },
+
             ],
-          }),
+        }),
 
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/
