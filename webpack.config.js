@@ -3,7 +3,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const CopyPlugin = require("copy-webpack-plugin");
 const isProduction = process.env.NODE_ENV == 'production';
 
 
@@ -22,7 +22,19 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: 'index.html',
             template: 'index.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'cart.html',
+            template: 'cart.html',
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: "src/images/products", to: "images/products" },
+                { from: "src/assets/fonts", to: "fonts" },
+
+            ],
         }),
 
         // Add your plugins here
@@ -43,6 +55,7 @@ const config = {
                 type: 'asset',
             },
 
+
             // Add your rules for custom modules here
             // Learn more about loaders from https://webpack.js.org/loaders/
         ],
@@ -52,10 +65,10 @@ const config = {
 module.exports = () => {
     if (isProduction) {
         config.mode = 'production';
-        
+
         config.plugins.push(new MiniCssExtractPlugin());
-        
-        
+
+
     } else {
         config.mode = 'development';
     }

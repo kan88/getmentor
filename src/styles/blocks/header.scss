@@ -1,0 +1,45 @@
+$light-grey: #CCCCCC;
+$white: #FFFFFF;
+
+.body-wrapper {
+   font-family: Montserrat-regular, sans-serif;
+}
+
+.visually-hidden {
+   position: fixed;
+   transform: scale(0);
+}
+  
+.header__container {
+   width: 1200px;
+   height: 76px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   background-color: $light-grey;
+}
+
+.header__logo {
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 37px;
+   color: $white;
+}
+.header__list {
+   display: flex;
+}
+
+.header__item {
+   list-style-type: none;
+}
+.header__item:first-child{
+   margin-right: 32px;
+};
+
+.header__link {
+   text-decoration: none;
+   font-weight: 400;
+   font-size: 16px;
+   color: $white;
+}
