@@ -1,15 +1,15 @@
-$black: #000000;
+@import '../common/variabless.scss';
+
 .sort {
-   height: 106px;
-   position: relative;
+   max-width: 1200px;
+   padding-top: 32px;
+   display: flex;
+   justify-content: right;
+   margin-bottom: 35px;
 }
 
 .sort__select {
    width: 288px;
-   height: 38px;
-   position: absolute;
-   right: 0%;
-   bottom: 35%;
    border: 1px solid #C4C4C4;
    border-radius: 20px;
    font-family: Montserrat-medium, sans-serif;
@@ -17,6 +17,32 @@ $black: #000000;
    padding: 10px 0px 10px 14px;
    color: $black;
    appearance: none;
-   background: url('/dist/images/icons/Polygon\ 1.svg') no-repeat right;
+   background: url('/dist/images/icons/array.svg') no-repeat right;
    background-position-x: 250px;
+}
+
+@media (max-width: 786px) {
+   .sort {
+      min-width: 786px;
+   }
+}
+
+@media (max-width: 420px) {
+   .sort {
+      padding-top: 15px;
+      margin-bottom: 15px;
+      min-width: 420px;
+
+   }
+   .sort__select{
+      width: 160px;
+   border: 1px solid #C4C4C4;
+   border-radius: 20px;
+   font-family: Montserrat-medium, sans-serif;
+   font-size: 9px;
+   padding: 5px 20px 5px 5px;
+   background: url('/dist/images/icons/array.svg') no-repeat right;
+   background-position-x: 130px;
+   background-size: 10px;
+   }
 }
