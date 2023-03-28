@@ -5,10 +5,11 @@
     <meta charset="utf-8" />
     <title>Webpack App</title>
     <link rel="stylesheet" href="/src/styles/blocks/header.scss">
+    <meta name="viewport" content = "width=device-width, initial-scale = 1">
 </head>
 
-<body>
-    <div class="body-wrapper">
+<body class="body">
+    <div class="body__wrapper">
         <header class="header">
             <h1 class="header__title visually-hidden">Магазин мебели</h1>
             <div class="header__container">
@@ -16,10 +17,10 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a class="header__link" href="">Каталог</a>
+                            <a class="header__link header__link--catalog" href="index.html"><span class="text">Каталог</span></a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="cart.html">Корзина</a>
+                            <a class="header__link  header__link--cart" href="cart.html"><span class="text">Корзина</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -38,8 +39,8 @@
                 <div class="catalog__container">
                     <ul class="catalog__items">
                         <li class="catalog__item">
-                            <img class="catalog__image" src="/images/products/bedTatran.jpg" height="250"
-                            width="379" alt="Изображение 'Кровать TATRAN'.">
+                            <img class="catalog__image" src="/images/products/bedTatran.jpg" height="250" width="379"
+                                alt="Изображение 'Кровать TATRAN'.">
                             <button class="catalog__btn catalog__btn--buy" href="#"></button>
                             <button class="catalog__btn catalog__btn--favorites" href="#"></button>
                             <h3 class="catalog__headline">Кровать TATRAN</h3>
@@ -95,8 +96,8 @@
                             <span class="catalog__price">40 000 руб.</span>
                         </li>
                         <li class="catalog__item">
-                            <img class="catalog__image" src="/images/products/closetNastan.jpg" height="250"
-                                width="379" alt="Изображение 'Шкаф Nastan'.">
+                            <img class="catalog__image" src="/images/products/closetNastan.jpg" height="250" width="379"
+                                alt="Изображение 'Шкаф Nastan'.">
                             <button class="catalog__btn catalog__btn--buy" href="#"></button>
                             <button class="catalog__btn catalog__btn--favorites" href="#"></button>
                             <h3 class="catalog__headline">Шкаф Nastan</h3>

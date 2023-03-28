@@ -1,52 +1,42 @@
-$black: #000000;
-.checkout {
-   width: 380px;
-   height: 556px;
-   padding: 0px;
-   margin-top: 33px;
-   background: #F7F6F6;
-   border-radius: 20px;
+@import '../common/variabless.scss';
+.checkout__container{
+width: 379px;
+background: #F7F6F6;
+border-radius: 20px;
+padding-top: 28px;
+padding-bottom: 148px;
 }
-
-.checkout__title{
-   margin: 44px 6px 40px 0px;
-   font-family: Montserrat-regular, sans-serif;
-   text-align: center;
-}
-
-.checkout__form {
+.checkout__form{
    display: flex;
    flex-direction: column;
-   margin-left: 24px;
+   padding-left: 28px;
+   padding-right: 64px;
+}
+.checkout__title{
+   text-align: center;
+   margin-bottom: 35px;
 }
 .checkout__input{
    font-family: Montserrat-regular, sans-serif;
+   font-size: 14px;
+   background-color:#F7F6F6;;
    border: none;
-   background: #F7F6F6;
-   margin-bottom: 4px;
-}
-.checkout__input::placeholder{
-   color: $black;
+   border-bottom: 1px solid #CACDD8;
+   margin-bottom: 41px;
 }
 .checkout__total{
    text-align: center;
    font-size: 24px;
-   margin-left: -10px;
-   margin-bottom: 21px;
+}
+.checkout__price{
+   font-weight: 600;
 }
 .checkout__submit{
-   font-family: Montserrat-regular, sans-serif;
-   font-size: 16px;
-   width: 290px;
-   height: 41px;
-   border-radius: 50px;
-   margin: 0 auto;
-   display: block;
-}
-
-.checkout__grey-line{
-width: 288px;
-height: 0px;
-border: 1px solid #CACDD8;
-margin: 0px 0px 36px 0px;
+width: 290px;
+padding: 10px 70px 10px 70px;
+border-radius: 50px;
+font-family: Montserrat-regular, sans-serif;
+font-size: 16px;
+display: block;
+margin: 0 auto;
 }

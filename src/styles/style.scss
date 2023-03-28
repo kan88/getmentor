@@ -1,21 +1,8 @@
+@import './common/variabless.scss';
 @import './blocks/header.scss';
 @import './blocks/sort.scss';
 @import './blocks/catalog.scss';
 @import './blocks/cart.scss';
 @import './blocks/checkout.scss';
-@font-face {
-    font-family: 'Montserrat-medium';
-    src: url(../assets/fonts/Montserrat-Medium.ttf);
-}
-@font-face {
-    font-family: 'Montserrat-regular';
-    src: url(../assets/fonts/Montserrat-Regular.ttf);
-}
-*{
-    box-sizing: border-box;
-}
-.main{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-};
+@import './common/fonts.scss';
+@import './common/common.scss';

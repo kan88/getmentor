@@ -1,6 +1,6 @@
-$black: #000000;
-$grey: #888888;
+@import '../common/variabless.scss';
 .catalog__items {
+   max-width: 1200px;
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
@@ -10,7 +10,7 @@ $grey: #888888;
 }
 
 .catalog__item {
-   width: 379px;
+   max-width: 379px;
    position: relative;
    margin-bottom: 48px;
 }
@@ -58,4 +58,23 @@ $grey: #888888;
 
 .catalog__btn--favorites::after {
    content: url(/dist/images/icons/favorite.png);
+}
+@media (max-width: 1140px) {
+   .catalog__items{
+      justify-content: space-around;
+   }
+ }
+@media (max-width: 786px) {
+  .catalog__items{
+   width: 786px;
+   flex-basis: 50%;
+   flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 420px) {
+   .catalog__items{
+      width: 420px;
+      justify-content: center;
+     }
 }
